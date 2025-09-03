@@ -1,12 +1,40 @@
-# React + Vite
+## Portfolio (React + Vite + Bootstrap)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, professional, and attractive portfolio built with React, Vite, Bootstrap, and Sass.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive layout with Bootstrap 5 and custom Sass
+- Light/Dark theme toggle with persistence
+- Sections: Hero, About, Skills, Projects, Contact
+- React-Bootstrap components and React Icons
 
-## Expanding the ESLint configuration
+### Quickstart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install deps
+   - `cd /workspace/portfolio`
+   - `npm install`
+2. Run dev server
+   - `npm run dev`
+3. Build & preview
+   - `npm run build`
+   - `npm run preview`
+
+### Customize
+
+- Update name/brand: `src/components/HeaderNav.jsx`, `src/sections/Hero.jsx`
+- About text: `src/sections/About.jsx`
+- Skills list: `src/sections/Skills.jsx`
+- Projects: `src/sections/Projects.jsx` (title, description, image, link)
+- Social links: `src/components/Footer.jsx`
+- Global styles/theme: `src/styles/styles.scss`, `index.html` (Google Fonts)
+
+### Structure
+
+- `src/components`: shared UI (`HeaderNav`, `Footer`)
+- `src/sections`: page sections (`Hero`, `About`, `Skills`, `Projects`, `Contact`)
+- `src/styles/styles.scss`: global styles and variables
+
+### Theming
+
+Theme is applied via `data-bs-theme` on `<html>` and saved in `localStorage`. Initial theme is set on first paint using a tiny inline script in `index.html`.
