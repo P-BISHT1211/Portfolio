@@ -1,0 +1,79 @@
+/* Global base */
+:root {
+  --brand-primary: #6c63ff;
+  --brand-accent: #0d6efd;
+  --section-padding-y: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+main {
+  padding-top: 72px; /* space for fixed navbar */
+}
+
+.section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+  color: var(--bs-secondary-color);
+  margin-bottom: 2rem;
+}
+
+/* Hero */
+.hero {
+  padding-top: calc(var(--section-padding-y) + 1rem);
+  padding-bottom: calc(var(--section-padding-y) + 1rem);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+  font-weight: 700;
+}
+
+.hero-tagline {
+  color: var(--bs-secondary-color);
+  font-size: 1.125rem;
+}
+
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.badge-skill {
+  margin: 0.25rem;
+}
+
+.project-card img {
+  object-fit: cover;
+  height: 180px;
+}
+
